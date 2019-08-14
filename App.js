@@ -24,6 +24,10 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import * as data from './version.json';
+const android_sha = data.git_sha;
+const android_ver = data.android_version;
+
 const App = () => {
   return (
     <Fragment>
@@ -62,6 +66,8 @@ const App = () => {
               <Text style={styles.sectionTitle}>Learn More</Text>
               <Text style={styles.sectionDescription}>
                 Read the docs to discover what to do next:
+				<Text>{android_sha}</Text>
+				<Text>{android_ver}</Text>
               </Text>
             </View>
             <LearnMoreLinks />
