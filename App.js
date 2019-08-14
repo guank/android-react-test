@@ -66,8 +66,8 @@ const App = () => {
               <Text style={styles.sectionTitle}>Learn More</Text>
               <Text style={styles.sectionDescription}>
                 Read the docs to discover what to do next:
-				<Text>{android_sha}</Text>
-				<Text>{android_ver}</Text>
+				<Text>{"\n"}Android SHA:{android_sha}{"\n"}</Text>
+				<Text>Android Version:{android_ver}</Text>
               </Text>
             </View>
             <LearnMoreLinks />
